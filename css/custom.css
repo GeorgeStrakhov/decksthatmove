@@ -1,0 +1,128 @@
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Syncopate:400,700);
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.transparent {
+	opacity: 0;
+}
+
+.reveal .red {
+	color: red;
+}
+
+.reveal p {
+	line-height: 140%;
+	color: #aaa;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	margin: 30px;
+	margin-top: 10px;
+}
+
+.reveal p.subLabel {
+	margin-top: -56px;
+}
+
+.reveal p.sideName {
+	line-height: 120%;
+	padding: 30px;
+	margin-top: 350px;
+	background-color: rgba(0,0,0,0.8);
+	color: #ddd;
+	float: left;
+}
+
+.reveal h2 {
+	text-transform:uppercase;
+	color: #fff;
+}
+
+.reveal hr {
+	border: 1px solid #aaa;
+	margin-bottom: 17px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.reveal img.icon {
+	border: none;
+	background: none;
+	margin: 50px;
+	width: 100px;
+}
+
+.reveal img.icon-large {
+	width: 200px;
+}
+
+.reveal img.icon-round {
+	height: 250px;
+	width: 250px;
+	border-radius: 250px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.reveal ul {
+	list-style: none;
+}
+
+.reveal ul li {
+	display: inline;
+	float: left;
+	margin: 80px;
+	margin-bottom: 0px;
+}
+
+.reveal ul li p {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.reveal ul li p a:link {
+	color: #eee;
+}
+
+.reveal .pieChart {
+	margin: 0 auto;
+}
+
+/* table */
+
+.reveal table {
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	border: none;
+}
+.reveal table td {
+	border: none;
+	vertical-align: middle;
+	padding: 20px;
+}
+
+.reveal th {
+	border-bottom: 2px solid #eee;
+	vertical-align: middle;
+	padding: 20px;
+}
