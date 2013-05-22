@@ -26,56 +26,6 @@ $(document).ready(function() {
 		]
 	});
 
-	//99% evil pie chart
-	var presentations = [
-	{ label: "evil",  data: 99},
-	{ label: "helpful",  data: 1}
-	];
-	$.thePie = $.plot($(".pieChart"), presentations, {
-			series: {
-					pie: {
-							show: true,
-							label: {
-								show: true,
-								radius: 1/5,
-								formatter: function(label, series){
-									return '<div style="font-family: \'Lato\'; font-width: 300; font-size:28pt;text-align:center;padding:2px;color:#222;">'+Math.round(series.percent)+'% '+label+'*</div>';
-								},
-								threshold: 0.1
-							},
-							stroke: {
-								color: '#555'
-							}
-					}
-			},
-			legend: {
-				show: false
-			},
-			colors: ["#ded", "#555"]
-	});
-	$.thePie2 = $.plot($(".pieChart2"), presentations, {
-			series: {
-					pie: {
-							show: true,
-							label: {
-								show: true,
-								radius: 1/5,
-								formatter: function(label, series){
-									return '<div style="font-family: \'Lato\'; font-width: 300; font-size:28pt;text-align:center;padding:2px;color:#222;">1% helpful*</div>';
-								},
-								threshold: 0.1
-							},
-							stroke: {
-								color: '#555'
-							}
-					}
-			},
-			legend: {
-				show: false
-			},
-			colors: ["#ded", "#555"]
-	});
-
 	//drama chart
 	$.dramaOn = false;
 	$.dramaData = [[29, 91], [30, 95]]
@@ -159,7 +109,6 @@ $(document).ready(function() {
 	//the initial load - if the slide from the url is with full BG
 	loadedSlide = $(Reveal.getCurrentSlide());
 	loadedBgDivObj = $('.state-background').first();
-	console.log(loadedBgDivObj);
 	$.processBackground(loadedSlide, loadedBgDivObj);
 
 	/*
@@ -219,4 +168,6 @@ $(document).ready(function() {
 			Reveal.prev();
 		}
 	});
+
+
 });
